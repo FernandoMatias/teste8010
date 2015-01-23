@@ -18,7 +18,9 @@ Ext.define('Touch2Demo.store.Contato', {
 	    {name: 'nome'},
 	    {name: 'cpf'},
 	    {name: 'telefone'},
-	    {name: 'endereco'}
+	    {name: 'endereco'},
+	    {name: 'login'},
+	    {name: 'senha'}
 	]
     }
 });
