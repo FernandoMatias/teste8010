@@ -56,6 +56,7 @@ Ext.define('Touch2Demo.controller.Main', {
 	    salvarCampoOcultoPneuBtn: 'button[action=salvarColeta]',
 	    salvarContatoBtn: 'button[action=salvarContato]',
 	    salvarIpBtn: 'button[action=salvarIP]',
+	    loginBtn: 'button[action=login]',
 	    deletarColetaBtn: 'button[action=deletarColeta]',
 	    deletarContatoBtn: 'button[action=deletarContato]',
 	    sincronizarBtn: 'button[action=sincronizar]',
@@ -135,6 +136,9 @@ Ext.define('Touch2Demo.controller.Main', {
 	    },
 	    apagarSincronizarPneuBtn: {
 		tap: 'apagarSincronizarPneu'
+	    },
+	    loginBtn: {
+		tap: 'login'
 	    }
 	}
     },
@@ -228,7 +232,7 @@ Ext.define('Touch2Demo.controller.Main', {
 	    });
 	});
 	Ext.Msg.confirm(
-		'Sincronização',
+		'SincronizaÃ§Ã£o',
 		'Deseja sincronizar os contatos?',
 		function (btn) {
 		    if (btn == 'yes') {
@@ -439,6 +443,9 @@ Ext.define('Touch2Demo.controller.Main', {
 		},
 		this
 		);
+    },
+    login: function(){
+	Ext.Msg.alert('teste', 'teste.', Ext.emptyFn);
     }
 });
 
