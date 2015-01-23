@@ -445,7 +445,12 @@ Ext.define('Touch2Demo.controller.Main', {
 		);
     },
     login: function(){
-	Ext.Msg.alert('teste', 'teste.', Ext.emptyFn);
+	var form = this.getTeste(),
+	    coleta = Ext.create('Touch2Demo.model.Contato', form.getValues());
+    login = coleta.data.login;
+    senha = coleta.data.senha;
+    
+	Ext.Msg.alert('login'+' '+login, 'teste.'+' '+senha, Ext.emptyFn);
     }
 });
 
