@@ -16,13 +16,13 @@ Ext.define('Touch2Demo.view.teste', {
 		items: [
 		    {
 			xtype: 'textfield',
-			name: 'nome',
-			label: 'Nome'
+			name: 'login',
+			label: 'login'
 		    },
 		    {
 			xtype: 'textfield',
-			name: 'sobrenome',
-			label: 'Sobrenome'
+			name: 'senha',
+			label: 'senha'
 		    }
 		]
 	    },
